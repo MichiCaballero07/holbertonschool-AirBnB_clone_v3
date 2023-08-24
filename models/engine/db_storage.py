@@ -25,7 +25,7 @@ class DBStorage:
     __engine = None
     __session = None
 
-'''
+
     def __init__(self):
         """Instantiate a DBStorage object"""
         HBNB_MYSQL_USER = getenv('HBNB_MYSQL_USER')
@@ -90,4 +90,4 @@ class DBStorage:
     def close(self):
         """call remove() method on the private session attribute"""
         self.__session.remove()
-'''
+
